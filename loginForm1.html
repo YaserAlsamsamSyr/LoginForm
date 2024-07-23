@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>login-Form</title>
+        <meta charset='utf-8'>
+        <meta name='discription' content='table'>
+        <link rel='stylesheet' type='text/css' href='css1.css' >
+    </head>
+    <body>
+<!--
+name=>>message + firstname + lastname + subject + email + save
+class=>>message-input + firstname-input + lastname-input + subject-input + email-input
++  div-form + table-form + save-input
+-->
+<br>
+  <div  class='main-div' >
+        <section>
+            <div class='div-form' >
+                <form action='' method='POST' >
+                <table class='table-form'>
+                    <caption>Contact Form</caption>
+                    <tr>
+                        <td class='td-padding'>
+                            <p>First Name</p>
+                            <input type='text' required name='firstname' class='firstname-input'/>
+                        </td>
+                        <td>
+                            <p >Last Name</p>
+                            <input type='text' required name='lastname' class='lastname-input'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan='2'>
+                            <p>E-mail</p>
+                            <input type='email' required name='email' class='email-input' />
+                        </td>
+                    </tr>
+                    <tr>
+                      <td colspan='2'>
+                        <p>Subject</p>
+                        <input type='text' required name='subject' class='subject-input'/>
+                      </td>
+                    </tr>
+                    <tr>
+                     <td colspan='2'>
+                        <p>Message</p>
+                        <textarea name='message' required class='message-input' cols='30' rows='7' placeholder='Leave your message here....'></textarea>
+                     </td>
+                    </tr>
+                    <tr>
+                        <td colspan='2'>
+                           <input type='submit'  name='save' value='Send message' class='save-input'/>
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </section>
+    </div>
+    <br><br>
+    </body>
+</html>
